@@ -696,6 +696,16 @@ button.btn {
   .bestSellerItem::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
 }
 @media only screen and (max-width:600px){
     *{
@@ -1452,6 +1462,16 @@ button.btn {
   .bestSellerItem::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
 }
 
 @media only screen and (min-width:600px){
@@ -2240,6 +2260,16 @@ button.btn {
   .bestSellerItem::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
 }
 
 @media only screen and (min-width:776px){
@@ -3005,7 +3035,16 @@ button.btn {
   .bestSellerItem::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-
+  .reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
 } 
 @media only screen and (min-width:992px){
     *{
@@ -3785,6 +3824,16 @@ h3.footerHead {
   .bestSellerItem::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
 }
 
 @media only screen and (min-width: 1200px){
@@ -3793,6 +3842,27 @@ h3.footerHead {
         margin:0;
         padding:0;
     }
+    html {
+        scroll-behavior: smooth;
+      }
+
+div#upBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    width: 16px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 19px 20px;
+    z-index: 100;
+    box-shadow: 1px 0px 4px 1px whitesmoke;
+}
+
+div#upBtn i {
+    font-size: 23px;
+    color: #44660f;
+}
 
 .extraContent {
     display: flex;
@@ -4572,5 +4642,15 @@ background-color: #ffffff;
 }
 
 
+.reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
 }
 
+}
